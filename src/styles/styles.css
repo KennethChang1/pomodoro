@@ -16,6 +16,11 @@ button {
   background-color: #161932;
 }
 
+nav {
+  max-width: 400px;
+  margin: auto;
+}
+
 .container {
   width: 90%;
   margin: auto;

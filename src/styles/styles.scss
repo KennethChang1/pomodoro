@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap');
+$primary-text: #D7E0FF;
+$dark-bg: #161932;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #1E213F;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+button{
+    border: none;
+    background-color: $dark-bg;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.logo{
+    color: $primary-text;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 39px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    background-color: $dark-bg;
+    align-items: center;
+    height: 50px;
+    border-radius: 31.5px;
+    margin-bottom: 55px;
+}
+
+.btn{
+    color: $primary-text;
+
+    &-nav{
+        height: 100%;
+        opacity: 0.4;
+        font-size: 12px;
+        width: 105px;
+        font-weight: 700;
+    }   
+
+    &-active{
+        background-color: #F87070;
+        opacity: 1;
+        color: #161932;
+        border-radius: 26.5px;
+    }
+
+    &-start{
+        z-index: 1;
+        font-weight: 700;
+        font-size: 14px;
+    }
+}
+
+.timer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $dark-bg;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    box-shadow: -20px -20px 100px #272C5A, 50px 50px 100px #121530;
+}
+
+.time{
+    color: $primary-text;
+    font-size: 80px;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.circle{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+}
+
+.off{
+    display: none;
+}

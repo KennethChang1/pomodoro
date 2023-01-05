@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1E213F;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+button {
+  border: none;
+  background-color: #161932;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.logo {
+  color: #D7E0FF;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 39px;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #161932;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  border-radius: 31.5px;
+  margin-bottom: 55px;
+}
+
+.btn {
+  color: #D7E0FF;
+}
+
+.btn-nav {
+  height: 100%;
+  opacity: 0.4;
+  font-size: 12px;
+  width: 105px;
+  font-weight: 700;
+}
+
+.btn-active {
+  background-color: #F87070;
+  opacity: 1;
+  color: #161932;
+  border-radius: 26.5px;
+}
+
+.btn-start {
+  z-index: 1;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.timer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #161932;
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  -webkit-box-shadow: -20px -20px 100px #272C5A, 50px 50px 100px #121530;
+          box-shadow: -20px -20px 100px #272C5A, 50px 50px 100px #121530;
+}
+
+.time {
+  color: #D7E0FF;
+  font-size: 80px;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.circle {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+}
+
+.off {
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */

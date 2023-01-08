@@ -1,10 +1,9 @@
-import { useEffect, useState, useRef, createRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import alarm from '../assets/alarm-clock-short-6402.mp3';
 
 const audio = new Audio(alarm);
 
-const Pomodoro = ({time, setTime, duration}) => {
-  const [start, setStart] = useState(false);
+const Pomodoro = ({time, setTime, duration, start, setStart}) => {
   const [minute, setMinute] = useState(time/60);
   const [seconds, setSeconds] = useState(time%60);
   const radius = 130;

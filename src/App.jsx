@@ -11,15 +11,20 @@ function App() {
   const [time, setTime] = useState(duration.pomodoro);
   const [shortBreak, setShortBreak] = useState(duration.shortBreak);
   const [longBreak, setLongBreak] = useState(duration.longBreak);
+  const [start, setStart] = useState(false);
+
+  useEffect(() => {
+    setStart(false)
+  }, [nav])
 
   const displayTimer = (status) => {
     switch (status) {
       case 1:
-        return <Pomodoro duration={duration.pomodoro} time={time} setTime={setTime}></Pomodoro>;
+        return <Pomodoro duration={duration.pomodoro} time={time} setTime={setTime} start={start} setStart={setStart}></Pomodoro>;
       case 2: 
-        return <Pomodoro duration={duration.shortBreak} time={shortBreak} setTime={setShortBreak}></Pomodoro>;
+        return <Pomodoro duration={duration.shortBreak} time={shortBreak} setTime={setShortBreak} start={start} setStart={setStart}></Pomodoro>;
       case 3: 
-        return <Pomodoro duration={duration.longBreak} time={longBreak} setTime={setLongBreak}></Pomodoro>;
+        return <Pomodoro duration={duration.longBreak} time={longBreak} setTime={setLongBreak} start={start} setStart={setStart}></Pomodoro>;
       default:
         return null;
     }

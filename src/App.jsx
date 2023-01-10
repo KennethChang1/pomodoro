@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useReducer } from 'react'
 import Pomodoro from './components/Pomodoro';
 
 function App() {
   const [duration, setDuration] = useState({
     "pomodoro": 1500,
-    "shortBreak": 300,
+    "shortBreak": 5,
     "longBreak": 600
   });
   const [nav, setNav] = useState(1);

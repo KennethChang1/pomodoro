@@ -108,6 +108,8 @@ nav {
   position: absolute;
   height: 300px;
   width: 300px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .off {
